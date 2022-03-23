@@ -6,9 +6,7 @@ import { getBookById } from '../../services/books';
 
 function BookDetail() {
   const params = useParams();
-  // const id = 1; // TODO: Use id from route
   const id = params.id;
-  console.log(id);
   const [book, setBook] = useState(null);
 
 
@@ -17,7 +15,6 @@ function BookDetail() {
     getBookById(id).then(({ data }) => setBook(data));
   }, [id]);
 
-  
   if (!book) return <h3>Loading book...</h3>;
 
   return (
