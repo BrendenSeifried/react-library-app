@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, NavLink } from 'react-router-dom';
 import Book from '../../components/book/Book';
 import { getBookById } from '../../services/books';
+
 
 function BookDetail() {
   const params = useParams();
@@ -19,7 +20,14 @@ function BookDetail() {
   
   if (!book) return <h3>Loading book...</h3>;
 
-  return <Book book={book} showDetail/>;
+  return (
+    <>
+      <NavLink exact to = '/books'>
+        <h3>Back to Book List</h3>
+      </NavLink>
+      <Book book={book} showDetail/>;
+    </>
+  );
 }
 
 export default BookDetail;

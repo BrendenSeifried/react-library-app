@@ -9,9 +9,9 @@ export default function Header() {
 
       </NavLink> */}
 
-      <NavLink exact to = '/books'>
-        <h3>Booklist</h3>
-      </NavLink>
+      {/* <NavLink exact to = '/books'>
+        <h3>Back to Book List</h3>
+      </NavLink> */}
     </div>
   );
 }
