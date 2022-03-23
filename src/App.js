@@ -2,7 +2,6 @@ import BookList from './views/Books/BookList';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import BookDetail from './views/Books/BookDetail';
 import Main from './views/Main/Main';
-import Header from './components/Header';
 import './App.css';
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
     <BrowserRouter>
       <main className="container">
         <h1>Library Catalog</h1>
-        <Header />
         <Switch>
           <Route exact path = '/books'>
             <BookList />
