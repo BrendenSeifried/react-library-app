@@ -4,8 +4,9 @@ import Book from '../../components/book/Book';
 import { getBookById } from '../../services/books';
 
 function BookDetail() {
+  const params = useParams();
   // const id = 1; // TODO: Use id from route
-  const { id } = useParams();
+  const id = params.id;
   console.log(id);
   const [book, setBook] = useState(null);
 
