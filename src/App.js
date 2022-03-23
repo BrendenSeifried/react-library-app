@@ -1,6 +1,6 @@
 import BookList from './views/Books/BookList';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-// import BookDetail from './views/Books/BookDetail';
+import BookDetail from './views/Books/BookDetail';
 import './App.css';
 
 function App() {
@@ -13,7 +13,9 @@ function App() {
           <Route exact path = '/booklist'>
             <BookList />
           </Route>
-          {/* <BookDetail /> */}
+          <Route exact path = '/bookdetail'>
+            <BookDetail />
+          </Route>
         </Switch>
       </main>
     </BrowserRouter>
