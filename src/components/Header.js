@@ -4,12 +4,12 @@ import { NavLink } from 'react-router-dom';
 export default function Header() {
   return (
     <div>
-      <NavLink exact to = '/bookdetail'>
+      {/* <NavLink exact to = '/bookdetail'>
         <h3>BookDetail</h3>
 
-      </NavLink>
+      </NavLink> */}
 
-      <NavLink exact to = '/booklist'>
+      <NavLink exact to = '/books'>
         <h3>Booklist</h3>
       </NavLink>
     </div>

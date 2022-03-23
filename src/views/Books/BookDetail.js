@@ -19,7 +19,7 @@ function BookDetail() {
   
   if (!book) return <h3>Loading book...</h3>;
 
-  return <Book book={book} showDetail />;
+  return <Book book={book} showDetail/>;
 }
 
 export default BookDetail;
